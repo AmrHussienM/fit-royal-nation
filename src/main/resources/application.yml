@@ -1,0 +1,37 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: e4fdd030838436d37a0bafc09d67bb61db80e95b384f1a680490f5f0d0fdc020
+    url: jdbc:postgresql://ec2-34-205-217-14.compute-1.amazonaws.com:5432/d52jjshj1mq5do
+    username: zihwgkjvxqsvtk
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
